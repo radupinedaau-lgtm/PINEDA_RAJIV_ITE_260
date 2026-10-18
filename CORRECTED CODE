@@ -1,0 +1,35 @@
+print("==== JIV'S ATM SYSTEM ====")
+
+BALANCE = 1000000
+TRANSACTIONS = []
+
+print("1. CHECK BALANCE")
+print("2. DEPOSIT")
+print("3. WITHDRAW")
+
+choice = int(input("CHOOSE AN OPTION:"))
+if choice == 1:
+    print("YOUR BALANCE IS:", BALANCE)
+
+elif choice == 2:
+    AMOUNT = float(input("ENTER THE AMOUNT:"))
+
+    if AMOUNT > 0:
+        BALANCE = BALANCE + AMOUNT
+        TRANSACTIONS.append("DEPOSIT: " + str(AMOUNT))
+        print("DEPOSIT SUCCESSFUL")
+        print("NEW BALANCE: ", BALANCE)
+    else:
+        print("INVALID AMOUNT")
+
+elif choice == 3:
+    AMOUNT = float(input("ENTER THE AMOUNT:"))
+
+    if AMOUNT > 0 and AMOUNT <= BALANCE:
+        BALANCE = BALANCE - AMOUNT
+        TRANSACTIONS.append("WITHDRAW: " + str(AMOUNT))
+        print("WITHDRAW SUCCESSFUL")
+        print("NEW BALANCE: ", BALANCE)
+
+    else:
+        print("INVALID AMOUNT OR INSUFFICIENT BALANCE")
