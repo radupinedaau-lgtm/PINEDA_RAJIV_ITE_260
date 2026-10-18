@@ -12,20 +12,20 @@ if choice == 1:
     print("YOUR BALANCE IS:", BALANCE)
 
  elif choice == 2:
-    AMOUNT = float(input("ENTER THE AMOUNT:"))
+    AMOUNT = float(input("ENTER THE AMOUNT:")
 
-    if AMOUNT > 0:
+    if AMOUNT > 0
         BALANCE = BALANCE + AMOUNT
-    TRANSACTIONS.append("DEPOSIT: " + str(AMOUNT))
+    TRANSACTIONS.append("DEPOSIT: " + str(AMOUNT)
         print("DEPOSIT SUCCESSFUL")
-        print("NEW BALANCE: ", BALANCE
+        print("NEW BALANCE: ", BALANCE)
     else:
         print("INVALID AMOUNT")
 
 elif choice == 3:
     AMOUNT = float(input("ENTER THE AMOUNT:"))
 
-    if AMOUNT > 0 and AMOUNT <= BALANCE:
+if AMOUNT > 0 and AMOUNT <= BALANCE:
         BALANCE = BALANCE - AMOUNT
         TRANSACTIONS.append("WITHDRAW: " + str(AMOUNT)
         print("WITHDRAW SUCCESSFUL")
