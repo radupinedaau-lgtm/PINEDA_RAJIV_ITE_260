@@ -16,9 +16,9 @@ if choice == 1:
 
     if AMOUNT > 0
         BALANCE = BALANCE + AMOUNT
-    TRANSACTIONS.append("DEPOSIT: " + str(AMOUNT))
+    TRANSACTIONS.append("DEPOSIT: " + str(AMOUNT)
         print("DEPOSIT SUCCESSFUL")
-        print("NEW BALANCE: ", BALANCE)
+        print("NEW BALANCE: ", BALANCE
     else:
         print("INVALID AMOUNT")
 
